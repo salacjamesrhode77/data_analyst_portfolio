@@ -26,7 +26,6 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 
 
 **Data Pipeline** <br>
-
 ![Data Architecture](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/data_architecture.png?raw=true)
 
 - Public CSV files were prepared as data sources and stored in a structured format for processing
@@ -35,10 +34,11 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 - dbt was used to clean and transform the raw data inside PostgreSQL
 - Final transformed datasets were produced and used for dashboard development
 
-<b>Sample SQL query using dbt to transform raw data within the database:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_sql_query.png" width="800"><br><br>
+<b>Sample SQL query using dbt to transform raw data within the database:</b><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_sql_query.png" width="800"><br>
 
 You can see more SQL queries/dbt models used in data transformation by [clicking here](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/maven_sales_challenge/maven_dbt/dbt_project/models)
+
 
 **Data Modeling (Power BI)** <br>
 
@@ -51,6 +51,7 @@ There are also tables that are independent of relationships for specific UX purp
 Fact Table: fact_salespipeline <br>
 Dimension Tables: dim_accounts, dim_calendar, dim_products, dim_salesteams <br>
 Independent Tables: viz_price_deviation, viz_selection_manager
+
 
 **DAX Measures** <br>
 
@@ -84,15 +85,15 @@ Below are sample DAX implementations for each use case:
 The interactive Power BI dashboard is divided into three sections aligned with the project objectives: <br>
 
 ![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page1.png?raw=true)
-- **First Page (Landing Page):** Focuses on visuals that provide managers with instant insights into how their teams are tracking against KPIs and how individual agents are performing. <br>
+- **First Page (Landing Page):** Focuses on visuals that provide managers with instant insights into how their teams are tracking against KPIs and how individual agents are performing. <br><br>
 
 
 ![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page2.png?raw=true)
-- **Second Page:** Highlights the products, sectors, and accounts the team should focus on, as they contribute the most to sales. It also provides suggested markup percentages for the strategic selling of products. <br>
+- **Second Page:** Highlights the products, sectors, and accounts the team should focus on, as they contribute the most to sales. It also provides suggested markup percentages for the strategic selling of products. <br><br>
 
 
 ![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page3.png?raw=true)
-- **Third Page:** Highlights the team’s performance compared to other sales teams across various metrics.Managers can see how their teams rank within the overall business and whether they are performing above or below average.
+- **Third Page:** Highlights the team’s performance compared to other sales teams across various metrics.Managers can see how their teams rank within the overall business and whether they are performing above or below average. <br>
 
 ### 📈 Key Results
 
