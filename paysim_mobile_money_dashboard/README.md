@@ -115,7 +115,6 @@ Below are sample DAX implementations for each use case:
 
 <b>Sample DAX for calculated tables:</b><br><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/paysim_DAX_calculated_table.png" width="800">
-
 ## Power BI Dashboard
 
 The transformed dataset is visualized across 3 dashboards designed to support different stakeholders. As the dashboard is interactive, usability was also prioritized for users who may not be familiar with Power BI. For this reason, a help button was added covering basic dashboard functionality such as navigation and filters (if applicable).

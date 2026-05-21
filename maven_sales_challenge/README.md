@@ -27,7 +27,7 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 
 **Data Pipeline** <br>
 
-![Data Architecture](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/data_architecture.png?raw=true)
+![Data Architecture](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/data_architecture.png?raw=true)
 
 - Public CSV files were prepared as data sources and stored in a structured format for processing
 - The data was loaded into a PostgreSQL database as tables
@@ -37,14 +37,14 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 
 **Data Modeling (Power BI)** <br>
 
-![Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_data_model.png?raw=true)
+![Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_data_model.png?raw=true)
 
 The data model follows a simple star schema, with multiple dimension tables connected to a central fact table. The tables are designed with one-to-many relationships to optimize performance and enable efficient filtering across the dashboards.
 
 There are also tables that are independent of relationships for specific UX purposes (disconnected slicers).
 
-Fact Table: fact_salespipeline
-Dimension Tables: dim_accounts, dim_calendar, dim_products, dim_salesteams
+Fact Table: fact_salespipeline <br>
+Dimension Tables: dim_accounts, dim_calendar, dim_products, dim_salesteams <br>
 Independent Tables: viz_price_deviation, viz_selection_manager
 
 **DAX Measures** <br>
@@ -76,15 +76,15 @@ Below are sample DAX implementations for each use case:
 **PowerBI dashboard** <br>
 The interactive Power BI dashboard is divided into three sections aligned with the project objectives: <br>
 
-![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page1.png?raw=true)
+![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_dashboard_page1.png?raw=true)
 - **First Page (Landing Page):** Focuses on visuals that provide managers with instant insights into how their teams are tracking against KPIs and how individual agents are performing. <br>
 
 
-![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page2.png?raw=true)
+![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_dashboard_page2.png?raw=true)
 - **Second Page:** Highlights the products, sectors, and accounts the team should focus on, as they contribute the most to sales. It also provides suggested markup percentages for the strategic selling of products. <br>
 
 
-![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page3.png?raw=true)
+![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_dashboard_page3.png?raw=true)
 - **Third Page:** Highlights the team’s performance compared to other sales teams across various metrics.Managers can see how their teams rank within the overall business and whether they are performing above or below average.
 
 ### 📈 Key Results
