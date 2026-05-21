@@ -35,6 +35,11 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 - dbt was used to clean and transform the raw data inside PostgreSQL
 - Final transformed datasets were produced and used for dashboard development
 
+<b>Sample SQL query using dbt to transform raw data within the database:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_sql_query.png" width="800"><br><br>
+
+You can see more SQL queries/dbt models used in data transformation by [clicking here](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/maven_sales_challenge/maven_dbt/dbt_project/models)
+
 **Data Modeling (Power BI)** <br>
 
 ![Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_data_model.png?raw=true)
@@ -73,7 +78,9 @@ Below are sample DAX implementations for each use case:
 
 <b>Sample DAX for calculated columns:</b><br><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_calculated_columns.png" width="800"><br><br>
+
 **PowerBI dashboard** <br>
+
 The interactive Power BI dashboard is divided into three sections aligned with the project objectives: <br>
 
 ![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page1.png?raw=true)
