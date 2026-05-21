@@ -119,7 +119,7 @@ Below are sample DAX implementations for each use case:
 <b>Sample DAX for calculated tables:</b><br><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/paysim_DAX_calculated_table.png" width="800">
 
-To explore the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
+To explore even more of the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
 
 
 ## Power BI Dashboard

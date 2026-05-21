@@ -80,6 +80,8 @@ Below are sample DAX implementations for each use case:
 <b>Sample DAX for calculated columns:</b><br><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_calculated_columns.png" width="800"><br><br>
 
+To explore even more of the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
+
 **PowerBI dashboard** <br>
 
 The interactive Power BI dashboard is divided into three sections aligned with the project objectives: <br>

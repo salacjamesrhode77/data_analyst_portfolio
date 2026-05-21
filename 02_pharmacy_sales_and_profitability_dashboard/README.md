@@ -55,7 +55,8 @@ Below are sample DAX implementations for each use case:
 <b>Sample DAX for custom conditional formatting:</b><br><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_DAX_calculated_tables.png" width="800"><br><br>
 
-To explore the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
+To explore even more of the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
+
 
 
 **Power BI Dashboard** <br>
