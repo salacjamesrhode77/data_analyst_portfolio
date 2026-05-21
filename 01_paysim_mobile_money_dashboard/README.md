@@ -78,7 +78,7 @@ Data transformation was implemented using dbt/SQL CTE queries on a PostgreSQL da
 - Marts layer (analytics-ready dataset for Power BI visualization)
 
 <b>Sample SQL query using dbt to transform raw data within the database:</b><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/paysim_sql_queries.png" width="800"><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/paysim_sql_queries.png" width="800"><br>
 
 You can see more SQL queries/dbt models used in data transformation by [clicking here](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/paysim_mobile_money_dashboard/dbt_paysim/models)
 
