@@ -77,20 +77,23 @@ Data transformation was implemented using dbt/SQL CTE queries on a PostgreSQL da
 - Intermediate layer (business logic and feature engineering)
 - Marts layer (analytics-ready dataset for Power BI visualization)
 
-[Click here to see SQL queries used in data transformation](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/paysim_mobile_money_dashboard/dbt_paysim/models)
+<b>Sample SQL query using dbt to transform raw data within the database:</b><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/paysim_sql_queries.png" width="800"><br>
 
+You can see more SQL queries/dbt models used in data transformation by [clicking here](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/paysim_mobile_money_dashboard/dbt_paysim/models)
 
 ### Data Modeling (Power BI)
 
-![Paysim Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/paysim_data_model.png)
+![Paysim Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/data_model_paysim.png)
 
-The data model follows a hybrid (partially snowflaked) schema, with the outermost table being a custom table primarily used for sorting in data visualizations.
+The data model follows a hybrid (partially snowflaked) schema, with multiple dimension tables connected to a central fact table. Additionally, an auxiliary table is included, primarily used for sorting values in reports. The tables are designed with one-to-many relationships to optimize performance and enable efficient filtering across dashboards.
 
-- Fact Table: fact_transactions  
-- Dimension Tables: dim_calendar, dim_customer, dim_merchants  
-- Sorting Tables: sort_day, sort_time, sort_bin, sort_cfmatrix_columns, and sort_cfmatrix_rows  
+There are also tables that are independent of relationships, used for specific purposes such as organizing measures, disconnected slicers, parameter tables, helper tables, and improving UI and UX.
 
-Relationships are designed as one-to-many to optimize performance and enable efficient filtering across the dashboards.
+- Fact Table: fact_transactions <br>
+- Dimension Tables: dim_calendar, dim_customer, dim_merchants <br>
+- Sorting Tables: sort_day, sort_time, sort_bin, sort_cfmatrix_columns, and sort_cfmatrix_rows <br>
+- Independent Tables: viz_waterfall_category, viz_waterfall_breakdown, viz_switch_KPIs, viz_switch_time_fields, viz_feature_importance
 
 ### DAX Measures
 
@@ -115,6 +118,10 @@ Below are sample DAX implementations for each use case:
 
 <b>Sample DAX for calculated tables:</b><br><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/paysim_DAX_calculated_table.png" width="800">
+
+To explore the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
+
+
 ## Power BI Dashboard
 
 The transformed dataset is visualized across 3 dashboards designed to support different stakeholders. As the dashboard is interactive, usability was also prioritized for users who may not be familiar with Power BI. For this reason, a help button was added covering basic dashboard functionality such as navigation and filters (if applicable).

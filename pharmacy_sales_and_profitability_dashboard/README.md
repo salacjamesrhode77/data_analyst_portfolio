@@ -19,7 +19,46 @@ The task is to build a Power BI report that helps stakeholders understand:
 
 Additionally, this project is guided by key business questions and analytical challenges, which are detailed [in this document](https://docs.google.com/document/d/1T973twFhLPFYHE2yWMfu1OIrpF6c2j1j/edit?usp=sharing).
 
-### ⚙️ Solution Approach
+### ⚙️ Methodology / Approach
+
+**Data Modeling** <br>
+![Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/data_model_pharmacy.png)
+
+The data model follows a hybrid (partially snowflaked) schema, with multiple dimension tables connected to a central fact table. Some dimensions are further normalized into related tables to reduce redundancy and support hierarchical relationships. Additionally, an auxiliary table is included, primarily used for sorting values in reports. The tables are designed with one-to-many relationships to optimize performance and enable efficient filtering across dashboards.
+
+There are also tables that are independent of relationships, used for specific purposes such as organizing measures, disconnected slicers, parameter tables, helper tables, and improving UI and UX.
+
+- Fact Table: fact_Sales <br>
+- Dimension Tables: dim_Pharmacy, dim_Product, dim_ProductDiscontinued, dim_Date, dim_Product_PromoFlag<br>
+- Sort Tables: sort_StoreSize, sort_ProductCategory <br>
+- Independent Tables: measures, viz_selectKPI, viz_ProductClassification, viz_ScatterPlotMeasures, viz_IconTrend, vizRepeatingProducts
+
+**DAX Measures** <br>
+DAX measures are used not only to aggregate values but also to create dynamic calculations, implement conditional logic, handle text formatting, custom conditional formatting, calculated tables, etc.
+
+Below are sample DAX implementations for each use case:
+
+<b>Key business metrics created using DAX:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_DAX_KPI.png" width="800"><br><br>
+
+<b>Sample DAX for dynamic calculations:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_dynamic_calculations.png" width="800"><br><br>
+
+<b>Sample DAX for conditional logic:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_DAX_conditional_logic.png" width="800"><br><br>
+
+<b>Sample DAX for text formatting:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_DAX_text_formatting.png" width="800"><br><br>
+
+<b>Sample DAX for custom conditional formatting:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_DAX_custom_conditional_formatting.png" width="800"><br><br>
+<b>Sample DAX for custom conditional formatting:</b><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/pharmacy_sales_and_profitability_dashboard/pharmacy_dashboard_DAX_calculated_tables.png" width="800"><br><br>
+
+To explore the DAX calculations and data model used, you may download the PBIX file [here](https://drive.google.com/drive/folders/1ttnH9vZmOAxkaBFNIVyDF8Y63GQvIbt4)
+
+
+**Power BI Dashboard** <br>
 
 The approach for this challenge is straightforward: address all key questions and analytical challenges by focusing on three critical areas—**Geography, Trends, and Products**—resulting in a three-page report.
 

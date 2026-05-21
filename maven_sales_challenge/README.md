@@ -15,7 +15,7 @@ In an effort to become a data-driven organization, MavenTech, a company that spe
 - Highlight key focus areas to help sales managers maximize opportunities and improve team performance.
 - Support sales managers in understanding how well their team is performing against other teams and business averages.
 
-### ⚙️ Solution Approach
+### ⚙️ Methodology / Approach
 
 **Datasets:** <br>
 In real-world application, datasets are continuously updated. However, this challenge gives a static source of data (CSV files). To simulate a dynamic, real-time data source, all csv files were uploaded to Google Sheets and converted into a public CSV export link. This approach allowed Airflow to pull updated data automatically, mimicking a live production scenario.
