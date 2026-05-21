@@ -37,7 +37,7 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 <b>Sample SQL query using dbt to transform raw data within the database:</b><br>
 <img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_sql_query.png" width="800"><br>
 
-You can see more SQL queries/dbt models used in data transformation by [clicking here](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/maven_sales_challenge/maven_dbt/dbt_project/models)
+You can see more SQL queries/dbt models used in data transformation by [clicking here](https://github.com/salacjamesrhode77/data_analyst_portfolio/tree/main/maven_sales_challenge/maven_dbt/dbt_project/models)<br>
 
 
 **Data Modeling (Power BI)** <br>
