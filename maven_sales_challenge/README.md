@@ -27,7 +27,7 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 
 **Data Pipeline** <br>
 
-![Data Architecture](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/data_architecture.png?raw=true)
+![Data Architecture](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/data_architecture.png?raw=true)
 
 - Public CSV files were prepared as data sources and stored in a structured format for processing
 - The data was loaded into a PostgreSQL database as tables
@@ -37,7 +37,7 @@ Two Docker Compose projects were provisioned for this project: [Airflow services
 
 **Data Modeling (Power BI)** <br>
 
-![Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_data_model.png?raw=true)
+![Data Model](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_data_model.png?raw=true)
 
 The data model follows a simple star schema, with multiple dimension tables connected to a central fact table. The tables are designed with one-to-many relationships to optimize performance and enable efficient filtering across the dashboards.
 
@@ -54,37 +54,37 @@ DAX measures are used not only to aggregate values but also to create dynamic ca
 Below are sample DAX implementations for each use case:
 
 <b>Key business metrics created using DAX:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_KPI.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_KPI.png" width="800"><br><br>
 
 <b>Sample DAX for dynamic calculations:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_dynamic_calculation.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_dynamic_calculation.png" width="800"><br><br>
 
 <b>Sample DAX for conditional logic:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_conditional_logic.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_conditional_logic.png" width="800"><br><br>
 
 <b>Sample DAX for time intelligence:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_time_intelligence.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_time_intelligence.png" width="800"><br><br>
 
 <b>Sample DAX for text formatting:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_text_formatting.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_text_formatting.png" width="800"><br><br>
 
 <b>Sample DAX for color formatting:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_color_formatting.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_color_formatting.png" width="800"><br><br>
 
 <b>Sample DAX for calculated columns:</b><br><br>
-<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_DAX_calculated_columns.png" width="800"><br><br>
+<img src="https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_DAX_calculated_columns.png" width="800"><br><br>
 **PowerBI dashboard** <br>
 The interactive Power BI dashboard is divided into three sections aligned with the project objectives: <br>
 
-![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_dashboard_page1.png?raw=true)
+![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page1.png?raw=true)
 - **First Page (Landing Page):** Focuses on visuals that provide managers with instant insights into how their teams are tracking against KPIs and how individual agents are performing. <br>
 
 
-![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_dashboard_page2.png?raw=true)
+![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page2.png?raw=true)
 - **Second Page:** Highlights the products, sectors, and accounts the team should focus on, as they contribute the most to sales. It also provides suggested markup percentages for the strategic selling of products. <br>
 
 
-![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/paysim_mobile_money_dashboard/writeup/mavensales_dashboard_page3.png?raw=true)
+![Maven Sales Page 1](https://github.com/salacjamesrhode77/portfolio_assets/blob/main/images/maven_sales_challenge/mavensales_dashboard_page3.png?raw=true)
 - **Third Page:** Highlights the team’s performance compared to other sales teams across various metrics.Managers can see how their teams rank within the overall business and whether they are performing above or below average.
 
 ### 📈 Key Results
